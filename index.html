@@ -19,7 +19,18 @@
 
   <div id="app">
 
+    <h1>Email List</h1>
+
     <ul id="email-list">
+      <!-- se la lunghezza dell'array randomEmails è = 10, quindi tutte le email random sono state generate, stampo il contenuto -->
+      <li v-for="email in randomEmails" v-if="randomEmails.length == 10">
+        {{email}}
+      </li>
+      <!-- altrimenti stampo Loading -->
+      <li v-else>
+        Loading
+      </li>
+      
     </ul>
 
   </div>
